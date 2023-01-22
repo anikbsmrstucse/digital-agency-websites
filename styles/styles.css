@@ -1,0 +1,117 @@
+/* reset website */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* common element */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: .6rem 1.5rem;
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* utility */
+:root {
+  --primary-color: #f52c2c;
+  --secondary-color: #d5d2d2;
+  --common-color: white;
+}
+
+/* nav bar style started */
+nav {
+  background-color: var(--secondary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-items ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-items li a {
+  text-decoration: none;
+  color: black;
+  margin: 1.5rem;
+  font-size: 1.2rem;
+}
+/* nav bar done */
+
+/* banner section start */
+.banner-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url("../asset/image/background.jpg");
+  background-position: center;
+  height: 100vh;
+  margin-top: 5rem;
+}
+.banner-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.banner-title {
+    font-size: 6rem;
+}
+.banner-span {
+    color: var(--primary-color);
+}
+.banner-subtitle {
+    font-size: 1.5rem;
+    margin: 1.3rem;
+}
+.secondary {
+    background-color: var(--secondary-color);
+    color: black;
+    margin-left: .5rem;
+}
+/* banner section done */
+
+/*  services section  */
+
+
+
+
+/* responsive for mobile devices devices */
+
+@media screen and (max-width: 576px) {
+  .nav-container,
+  .nav-items ul {
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .banner-section {
+    margin-top: 11rem;
+  }
+  .banner-items {
+    padding-top: 0rem;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
+  .banner-section {
+    height: 100%;
+    width: 100%;
+  }
+}
