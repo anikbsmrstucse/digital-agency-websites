@@ -87,7 +87,7 @@ nav {
 /* banner section done */
 
 /*  services section  */
-section {
+.service {
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .9)),url('../asset/image/footer-bg.png');
     height: 100%;
     width: 100%;
@@ -229,7 +229,43 @@ hr {
 }
 
 /* services list done */
+.blog {
+  margin-top: 10rem;
+}
+.blog-span {
+  color: var(--primary-color);
+}
+.news {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.news-img {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+}
+.news-items {
+  box-shadow: 5px 5px 20px var(--secondary-color);
+  padding: 1.2rem;
+  border-radius: .5rem;
+}
+.news-items img {
+    width: 100%;
+}
+.news-title {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.news-subtitle {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0 10rem;
+  margin-bottom: 3rem;
 
+}
+/* news and blog item done */
 
 
 
