@@ -87,6 +87,148 @@ nav {
 /* banner section done */
 
 /*  services section  */
+section {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .9)),url('../asset/image/footer-bg.png');
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.service-container {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: .5rem 0;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.service-items{
+    color: var(--common-color);
+}
+.service-title {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.service-span {
+    color: var(--primary-color);
+}
+.service-subtitle {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+.service-items ol li{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.service-btn {
+    border-radius: 1.5rem;
+    color: gray;
+    background-color: var(--secondary-color);
+}
+.author-item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+.author-info {
+    display: flex;
+    align-items: center;
+}
+.author-info img {
+    border-radius: 50%;
+    width: 30%;
+    margin-right: .5rem;
+}
+.hr-border {
+    border-left: 2px solid var(--primary-color) ;
+    height: 100px;
+}
+.author-button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1.4rem;
+    border-radius: 2rem;
+}
+.service-img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: .5rem;
+
+}
+.img-item {
+    background-color: var(--common-color);
+    height: 300px;
+    width: 280px;
+    border-radius: .2rem;
+}
+.items {
+    text-align: center;
+    margin-top: 4rem;
+}
+.items-title {
+    margin-top: 1rem;
+}
+.service-img img {
+    width: 40%
+}
+.appointment{
+    background-color: var(--primary-color);
+    height: 180px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    margin-bottom: -6rem;
+    margin-top: 2rem;
+}
+.appointment img {
+    width: 6rem;
+    margin-left: 1rem;
+}
+.appointment-items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1.2rem ;
+}
+.items-info {
+    color: var(--common-color);
+    margin-left: 1rem;
+    padding-right: 1rem;
+}
+.item-number {
+    font-size: 2rem;
+}
+.item-subtitle {
+    font-size: .6rem;
+}
+.appointment-subtitle {
+    padding: 0 3rem;
+    color: var(--common-color);
+    font-size: 1.2rem;
+}
+.appointment-btn {
+    color: black;
+    background-color: var(--secondary-color);
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-right: 2rem;
+
+}
+hr {
+    height: 80%;
+    color: var(--secondary-color);
+    width: 2px;
+}
+
+/* services list done */
 
 
 
@@ -113,5 +255,30 @@ nav {
   .banner-section {
     height: 100%;
     width: 100%;
+  }
+  .service-container,.appointment-items {
+    flex-direction: column;
+  }
+  .appointment {
+    height: 100%;
+    text-align: center;
+  }
+  .service-img {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .items-info {
+    margin: 1rem 0;
+  }
+  hr {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .appointment-subtitle,.appointment-btn {
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-right: 0;
+  }
+  .appointment img {
+    margin-left: -1rem;
   }
 }
